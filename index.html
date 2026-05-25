@@ -629,7 +629,7 @@ body {
   <button class="tab-btn" onclick="switchTab('nations')">🎌 Parade of Nations</button>
   <button class="tab-btn" onclick="switchTab('broadway')">Broadway</button>
   <button class="tab-btn" onclick="switchTab('matches')">Matches</button>
-  <button class="tab-btn" onclick="switchTab('squad')">The Squad</button>
+  <button class="tab-btn" onclick="switchTab('squad')">Guests</button>
   <button class="tab-btn" onclick="switchTab('map')">Map</button>
   <button class="tab-btn" onclick="switchTab('explore')">Explore NYC</button>
 </nav>
@@ -1053,7 +1053,7 @@ body {
       <div class="attending-row">
         <div class="attending-label">Attending</div>
         <div class="attending-chips">
-          <span class="attending-chip">Liz</span><span class="attending-chip">Todd</span><span class="attending-chip">Mario</span><span class="attending-chip">Lindsey</span><span class="attending-chip">Camile</span><span class="attending-chip">Fabrizzio</span><span class="attending-chip">Rashmi</span><span class="attending-chip">Clifton</span>
+          <span class="attending-chip">Liz</span><span class="attending-chip">Todd</span><span class="attending-chip">Mario</span><span class="attending-chip">Lindsey</span><span class="attending-chip">Camille</span><span class="attending-chip">Fabrizzio</span><span class="attending-chip">Rashmi</span><span class="attending-chip">Clifton</span>
         </div>
       </div>
       <a class="match-preview-link" href="https://www.foxsports.com/stories/soccer/norway-world-cup-2026-preview-best-players-roster-history-jersey-predictions" target="_blank">Norway Preview ↗</a>
@@ -1097,7 +1097,7 @@ body {
       <div class="attending-row">
         <div class="attending-label">Attending</div>
         <div class="attending-chips">
-          <span class="attending-chip">Aurora</span><span class="attending-chip">Camile</span><span class="attending-chip">Rob</span><span class="attending-chip">Ale</span><span class="attending-chip">Hektor</span><span class="attending-chip">Gino</span><span class="attending-chip">Merri</span><span class="attending-chip">Fabrizzio</span><span class="attending-chip">Rashmi</span><span class="attending-chip">Clifton</span>
+          <span class="attending-chip">Aurora</span><span class="attending-chip">Camille</span><span class="attending-chip">Rob</span><span class="attending-chip">Alessandro</span><span class="attending-chip">Hektor</span><span class="attending-chip">Gino</span><span class="attending-chip">Merri</span><span class="attending-chip">Fabrizzio</span><span class="attending-chip">Rashmi</span><span class="attending-chip">Clifton</span>
         </div>
       </div>
       <a class="match-preview-link" href="https://www.foxsports.com/stories/soccer/ecuador-world-cup-2026-preview-best-players-roster-history-jersey-predictions" target="_blank">Ecuador Preview ↗</a>
@@ -1156,87 +1156,175 @@ body {
 <!-- ===== SQUAD TAB ===== -->
 <div id="panel-squad" class="tab-panel">
 
-  <!-- Squad intro -->
-  <div style="background: linear-gradient(135deg, #D4580A 0%, #9A3412 100%); border-radius: 16px; padding: 20px; color: white; margin-bottom: 20px; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: -20px; right: -10px; font-size: 100px; opacity: 0.08;">⭐</div>
+  <!-- Guests header -->
+  <div style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); border-radius: 16px; padding: 20px; color: white; margin-bottom: 20px; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -20px; right: -10px; font-size: 100px; opacity: 0.06;">🎟️</div>
     <div style="font-size: 10px; color: rgba(255,255,255,0.7); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 8px;">June 2026 · NYC</div>
-    <div style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 6px;">The Squad</div>
-    <div style="font-size: 13px; opacity: 0.8; margin-bottom: 4px;">NYC doesn't know what's coming.</div>
-    <div style="font-size: 13px; opacity: 0.6; margin-bottom: 16px; font-style: italic;">Fearless by nature. Goofy by choice.</div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 6px;">The Guests</div>
+    <div style="font-size: 13px; opacity: 0.7; line-height: 1.6;">Everyone who made the June Extravaganza what it is.</div>
+  </div>
+
+  <!-- Headliners -->
+  <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; margin-bottom: 16px;">
+    <div style="font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 12px;">⭐ Headliners</div>
     <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-      <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Laiken</span>
-      <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Aria</span>
-      <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Arushka</span>
-      <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Ksana</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Alessandro</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Aurora</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Camille</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Clifton</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Fabrizzio</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Gino</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Hektor</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Lindsey</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Liz</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Mario</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Merri</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Rashmi</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Rob</span>
+      <span style="background: var(--gold-light); color: var(--gold-dark); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Todd</span>
     </div>
   </div>
 
-  <!-- Squad Norse: Rockefeller -->
-  <div class="kids-event-card" style="margin-bottom: 20px;">
-    <div class="kids-event-header" style="background: #1565C0;">
-      <div class="kids-event-title">Squad Norse: Rockefeller</div>
-      <div class="kids-event-date">Sunday, June 21st · Morning</div>
+  <!-- The Squad -->
+  <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; margin-bottom: 16px;">
+    <div style="font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); margin-bottom: 12px;">⭐ The Squad</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;">
+      <span style="background: var(--orange-light); color: var(--orange); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Aria</span>
+      <span style="background: var(--orange-light); color: var(--orange); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Arushka</span>
+      <span style="background: var(--orange-light); color: var(--orange); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Ksana</span>
+      <span style="background: var(--orange-light); color: var(--orange); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Laiken</span>
     </div>
-    <div class="kids-event-body">
-      <div class="kids-section-label">The Mission</div>
-      <div style="font-size: 13px; color: var(--muted); margin-bottom: 16px; line-height: 1.6;">A Midtown takeover with a Norse twist — waffles, toys, roller skating, and World Cup gear. Back by 2 PM for Mario's Times Square run.</div>
-      <div class="options-list">
-        <div class="option-item">
-          <div class="option-label">🧇 Stop 1 — Scandinavia House</div>
-          <div class="option-desc">58 Park Ave. Norwegian waffles to kick off the Norse mission. Open from 11 AM.</div>
-        </div>
-        <div class="option-item">
-          <div class="option-label">🧸 Stop 2 — FAO Schwarz</div>
-          <div class="option-desc">30 Rockefeller Plaza. The legendary toy store — floor piano, Build-a-Bear, Barbie boutique, larger-than-life everything.</div>
-        </div>
-        <div class="option-item">
-          <div class="option-label">⛸️ Stop 3 — Roller Skating at The Rink</div>
-          <div class="option-desc">Rockefeller Plaza. The rink goes roller skating every summer — under Prometheus with Midtown all around you.</div>
-        </div>
-        <div class="option-item">
-          <div class="option-label">⚽ Stop 4 — FIFA World Cup Store</div>
-          <div class="option-desc">51st St at Rockefeller Center. The squad picks their gear — jerseys, scarves, collectibles.</div>
-        </div>
+    <a href="#squad-events" onclick="document.getElementById('squad-events').scrollIntoView({behavior:'smooth'}); return false;" style="display: inline-flex; align-items: center; gap: 6px; background: var(--orange); color: white; border-radius: 999px; padding: 8px 16px; font-size: 12px; font-weight: 700; text-decoration: none; letter-spacing: 0.5px;">⭐ See Squad Events ↓</a>
+  </div>
+
+  <!-- Making Appearances -->
+  <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; margin-bottom: 16px;">
+    <div style="font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--sky); margin-bottom: 16px;">✨ Making Appearances</div>
+
+    <!-- Geeta -->
+    <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Geeta</div>
+    </div>
+
+    <!-- Jacob -->
+    <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Jacob</div>
+      <div style="font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 8px;">NYC local, Wisconsin roots, and Arushka's vocal coach. Jacob brings his own kind of energy to every room — expect him at the Opening Ceremony, Once Upon a Dream, and Closing Ceremonies.</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <span style="background: var(--sky-light); color: var(--sky); border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600;">Opening Ceremony</span>
+        <span style="background: var(--sky-light); color: var(--sky); border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600;">Once Upon a Dream</span>
+        <span style="background: var(--sky-light); color: var(--sky); border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600;">Closing Ceremonies</span>
+      </div>
+    </div>
+
+    <!-- Linda -->
+    <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border);">
+      <div style="font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Linda</div>
+    </div>
+
+    <!-- Mr. & Mrs. Rodrigo Imana -->
+    <div>
+      <div style="font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Mr. &amp; Mrs. Rodrigo Imana</div>
+      <div style="font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 8px;">Rodrigo adopted this family before we knew we needed it. Bonded over soccer, DIY Christmas, and more — somewhere along the way he became the person keeping us all moving better, healthier, and happier. Joining us for Once Upon a Dream and the dinner after.</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+        <span style="background: var(--sky-light); color: var(--sky); border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600;">Once Upon a Dream</span>
+        <span style="background: var(--sky-light); color: var(--sky); border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600;">Dinner After</span>
       </div>
     </div>
   </div>
 
-  <!-- Kids Take Over the Movies -->
-  <div class="kids-event-card">
-    <div class="kids-event-header">
-      <div class="kids-event-title">Kids Take Over the Movies</div>
-      <div class="kids-event-date">Monday, June 22nd — parallel to Norway vs Senegal</div>
+  <!-- Caretakers -->
+  <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; margin-bottom: 24px;">
+    <div style="font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 12px;">🤍 Caretakers</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+      <span style="background: var(--green-light); color: var(--green); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Geeta</span>
+      <span style="background: var(--green-light); color: var(--green); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600;">Linda</span>
     </div>
-    <div class="kids-event-body">
-      <div class="kids-section-label">The Squad</div>
-      <div class="kids-people">
-        <span class="kids-person kid">Laiken</span>
-        <span class="kids-person kid">Aria</span>
-        <span class="kids-person kid">Arushka</span>
-        <span class="kids-person kid">Ksana</span>
+  </div>
+
+  <!-- Squad Events anchor -->
+  <div id="squad-events">
+    <div style="background: linear-gradient(135deg, #D4580A 0%, #9A3412 100%); border-radius: 16px; padding: 20px; color: white; margin-bottom: 20px; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: -20px; right: -10px; font-size: 100px; opacity: 0.08;">⭐</div>
+      <div style="font-size: 10px; color: rgba(255,255,255,0.7); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 8px;">June 2026 · NYC</div>
+      <div style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 6px;">The Squad</div>
+      <div style="font-size: 13px; opacity: 0.8; margin-bottom: 4px;">NYC doesn't know what's coming.</div>
+      <div style="font-size: 13px; opacity: 0.6; margin-bottom: 16px; font-style: italic;">Fearless by nature. Goofy by choice.</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Aria</span>
+        <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Arushka</span>
+        <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Ksana</span>
+        <span style="background: rgba(255,255,255,0.15); border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600;">Laiken</span>
       </div>
-      <div class="kids-section-label">Supporting Guides</div>
-      <div class="kids-people">
-        <span class="kids-person chaperone">Aurora ✓?</span>
-        <span class="kids-person chaperone">Ale</span>
-        <span class="kids-person chaperone">Hektor</span>
-        <span class="kids-person chaperone">Rob</span>
-        <span class="kids-person chaperone">Linda</span>
+    </div>
+
+    <!-- Squad Norse: Rockefeller -->
+    <div class="kids-event-card" style="margin-bottom: 20px;">
+      <div class="kids-event-header" style="background: #1565C0;">
+        <div class="kids-event-title">Squad Norse: Rockefeller</div>
+        <div class="kids-event-date">Sunday, June 21st · Morning</div>
       </div>
-      <div class="divider"></div>
-      <div class="kids-section-label">Choose Your Adventure</div>
-      <div class="options-list">
-        <div class="option-item">
-          <div class="option-label">Option A — Sky Castle Movie</div>
-          <div class="option-desc">The Squad arranges their optimal living room theatre. Pizza, Nuggets, or whatever the kitchen can offer.</div>
+      <div class="kids-event-body">
+        <div class="kids-section-label">The Mission</div>
+        <div style="font-size: 13px; color: var(--muted); margin-bottom: 16px; line-height: 1.6;">A Midtown takeover with a Norse twist — waffles, toys, roller skating, and World Cup gear. Back by 2 PM for Mario's Times Square run.</div>
+        <div class="options-list">
+          <div class="option-item">
+            <div class="option-label">🧇 Stop 1 — Scandinavia House</div>
+            <div class="option-desc">58 Park Ave. Norwegian waffles to kick off the Norse mission. Open from 11 AM.</div>
+          </div>
+          <div class="option-item">
+            <div class="option-label">🧸 Stop 2 — FAO Schwarz</div>
+            <div class="option-desc">30 Rockefeller Plaza. The legendary toy store — floor piano, Build-a-Bear, Barbie boutique, larger-than-life everything.</div>
+          </div>
+          <div class="option-item">
+            <div class="option-label">⛸️ Stop 3 — Roller Skating at The Rink</div>
+            <div class="option-desc">Rockefeller Plaza. The rink goes roller skating every summer — under Prometheus with Midtown all around you.</div>
+          </div>
+          <div class="option-item">
+            <div class="option-label">⚽ Stop 4 — FIFA World Cup Store</div>
+            <div class="option-desc">51st St at Rockefeller Center. The squad picks their gear — jerseys, scarves, collectibles.</div>
+          </div>
         </div>
-        <div class="option-item">
-          <div class="option-label">Option B — Command Center Movie</div>
-          <div class="option-desc">Command Center viewing with a rooftop intermission party (theme TBD). Pizza, Nuggets, or other favorite finger food.</div>
+      </div>
+    </div>
+
+    <!-- Kids Take Over the Movies -->
+    <div class="kids-event-card">
+      <div class="kids-event-header">
+        <div class="kids-event-title">Kids Take Over the Movies</div>
+        <div class="kids-event-date">Monday, June 22nd — parallel to Norway vs Senegal</div>
+      </div>
+      <div class="kids-event-body">
+        <div class="kids-section-label">The Squad</div>
+        <div class="kids-people">
+          <span class="kids-person kid">Aria</span>
+          <span class="kids-person kid">Arushka</span>
+          <span class="kids-person kid">Ksana</span>
+          <span class="kids-person kid">Laiken</span>
         </div>
-        <div class="option-item">
-          <div class="option-label">Option C — 42nd Street Theater</div>
-          <div class="option-desc"><a href="https://www.amctheatres.com/movie-theatres/new-york-city/amc-empire-25" target="_blank">AMC Empire 25</a> or IMAX. Unlimited snacks. After party at Sky Castle.</div>
+        <div class="kids-section-label">Supporting Guides</div>
+        <div class="kids-people">
+          <span class="kids-person chaperone">Alessandro</span>
+          <span class="kids-person chaperone">Aurora</span>
+          <span class="kids-person chaperone">Hektor</span>
+          <span class="kids-person chaperone">Linda</span>
+          <span class="kids-person chaperone">Rob</span>
+        </div>
+        <div class="divider"></div>
+        <div class="kids-section-label">Choose Your Adventure</div>
+        <div class="options-list">
+          <div class="option-item">
+            <div class="option-label">Option A — Sky Castle Movie</div>
+            <div class="option-desc">The Squad arranges their optimal living room theatre. Pizza, Nuggets, or whatever the kitchen can offer.</div>
+          </div>
+          <div class="option-item">
+            <div class="option-label">Option B — Command Center Movie</div>
+            <div class="option-desc">Command Center viewing with a rooftop intermission party (theme TBD). Pizza, Nuggets, or other favorite finger food.</div>
+          </div>
+          <div class="option-item">
+            <div class="option-label">Option C — 42nd Street Theater</div>
+            <div class="option-desc"><a href="https://www.amctheatres.com/movie-theatres/new-york-city/amc-empire-25" target="_blank">AMC Empire 25</a> or IMAX. Unlimited snacks. After party at Sky Castle.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1895,7 +1983,7 @@ const drawerData = {
       { icon: '📍', label: 'Venue', value: 'MetLife Stadium · East Rutherford, NJ' },
       { icon: '🚌', label: 'Depart', value: '5:00 PM from Sky Castle' },
       { icon: '⚽', label: 'Kickoff', value: '8:00 PM' },
-      { icon: '👥', label: 'Attending', value: 'Whitney (confirm), Dylan (confirm), Liz, Todd, Mario, Lindsey, Fabrizzio, Rashmi, Clifton' },
+      { icon: '👥', label: 'Attending', value: 'Liz, Todd, Mario, Lindsey, Camille, Fabrizzio, Rashmi, Clifton' },
       { icon: '🇳🇴', label: 'Norway', value: 'Rank #31 · Stars: Erling Haaland, Martin Ødegaard' },
       { icon: '🇸🇳', label: 'Senegal', value: 'Rank #14 · Stars: Sadio Mané, Nicolas Jackson' },
     ]
@@ -1907,7 +1995,7 @@ const drawerData = {
     rows: [
       { icon: '🎬', label: 'Timing', value: 'Parallel to Norway vs Senegal match' },
       { icon: '⭐', label: 'The Squad', value: 'Laiken, Aria, Arushka, Ksana' },
-      { icon: '🧑‍🤝‍🧑', label: 'Supporting Guides', value: 'Aurora (confirm), Ale, Hektor, Rob, Linda' },
+      { icon: '🧑‍🤝‍🧑', label: 'Supporting Guides', value: 'Aurora, Alessandro, Hektor, Rob, Linda' },
       { icon: '🅐', label: 'Option A', value: 'Sky Castle Movie — The Squad arranges their optimal living room theatre. Pizza, Nuggets, or whatever the kitchen can offer.' },
       { icon: '🅑', label: 'Option B', value: 'Command Center Movie — rooftop intermission party (theme TBD). Pizza, Nuggets, or other favorite finger food.' },
       { icon: '🅒', label: 'Option C', value: '<a href="https://www.amctheatres.com/movie-theatres/new-york-city/amc-empire-25" target="_blank">AMC Empire 25</a> or IMAX — unlimited snacks. After party at Sky Castle.' },
@@ -1981,7 +2069,7 @@ const drawerData = {
       { icon: '📍', label: 'Venue', value: 'MetLife Stadium · East Rutherford, NJ' },
       { icon: '🚌', label: 'Depart', value: '1:00 PM from Sky Castle' },
       { icon: '⚽', label: 'Kickoff', value: '4:00 PM' },
-      { icon: '👥', label: 'Attending', value: 'Aurora (confirm), Camile, Rob, Ale, Hektor, Gino, Merri, Fabrizzio, Rashmi, Clifton' },
+      { icon: '👥', label: 'Attending', value: 'Aurora, Camille, Rob, Alessandro, Hektor, Gino, Merri, Fabrizzio, Rashmi, Clifton' },
       { icon: '🇪🇨', label: 'Ecuador', value: 'Rank #23 · Stars: Moisés Caicedo, Enner Valencia' },
       { icon: '🇩🇪', label: 'Germany', value: 'Rank #10 · Stars: Jamal Musiala, Florian Wirtz' },
     ]

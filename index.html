@@ -349,6 +349,7 @@ body {
 .drawer-badge-match { background: #FEF9C3; color: #854D0E; }
 .drawer-badge-event { background: var(--sky-light); color: var(--sky); }
 .drawer-badge-kids { background: var(--orange-light); color: var(--orange); }
+.drawer-badge-general { background: #F3F4F6; color: #6B7280; }
 
 /* ---- MATCH CARDS VIEW ---- */
 .match-list { display: flex; flex-direction: column; gap: 16px; }
@@ -677,20 +678,23 @@ body {
           <td><div class="grid-cell"><div class="gc-item gc-kids" onclick="openDrawer('sun21-morning')"><div class="gc-title">Squad Norse: Rockefeller</div><div class="gc-sub">Waffles · FAO Schwarz · Skating · WC Store</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('mon22-morning')"><div class="gc-title">Lions of Teranga</div><div class="gc-sub">Little Senegal, Harlem</div></div></div></td>
           <td><div class="grid-cell-empty">Open</div></td>
-          <td><div class="grid-cell-empty">Open</div></td>
+          <td><div class="grid-cell"><div class="gc-item gc-kids" onclick="openDrawer('wed24-morning-stash')"><div class="gc-time">11:00 AM</div><div class="gc-title">Squad Stash Surprise</div><div class="gc-sub">Marking Moments</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('thu25-morning')"><div class="gc-title">Ravilethe Bhakshanam</div><div class="gc-sub">Rashmi hosts breakfast</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-kids" onclick="openDrawer('fri26-morning-bday')"><div class="gc-time">11:00 AM</div><div class="gc-title">Ksana's Birthday Party 🎂</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-neutral" onclick="openDrawer('sat27-morning')"><div class="gc-title">Departures</div><div class="gc-sub">AM travel</div></div></div></td>
         </tr>
         <tr>
           <td>Day</td>
-          <td><div class="grid-cell"><div class="gc-item gc-neutral" onclick="openDrawer('sat20-day')"><div class="gc-title">Orientation</div><div class="gc-sub">Explore neighborhood</div></div></div></td>
+          <td><div class="grid-cell">
+            <div class="gc-item gc-neutral" onclick="openDrawer('sat20-day')"><div class="gc-title">Orientation</div><div class="gc-sub">Explore neighborhood</div></div>
+            <div class="gc-item gc-kids" onclick="openDrawer('sat20-day-stash')"><div class="gc-time">4:00 PM</div><div class="gc-title">Squad Stash Surprise</div><div class="gc-sub">Marking Moments</div></div>
+          </div></td>
           <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('sun21-day')"><div class="gc-time">3:00 PM</div><div class="gc-title">Mario Takes on Times Square</div></div></div></td>
-          <td><div class="grid-cell-empty">Open</div></td>
+          <td><div class="grid-cell"><div class="gc-item gc-kids" onclick="openDrawer('mon22-day-stash')"><div class="gc-time">3:00 PM</div><div class="gc-title">Squad Stash Surprise</div><div class="gc-sub">Marking Moments</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('tue23-day')"><div class="gc-time">3:00 PM</div><div class="gc-title">Behind the Scenes</div><div class="gc-sub">Once Upon a Dream</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('wed24-day')"><div class="gc-title">German House of Soccer</div><div class="gc-sub">525 W 28th St</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-match" onclick="openDrawer('thu25-day')"><div class="gc-time">Depart 1PM · KO 4PM</div><div class="gc-title">Ecuador vs Germany</div><div class="gc-sub">MetLife Stadium</div></div></div></td>
-          <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('fri26-day-broadway')"><div class="gc-time">2:00 PM</div><div class="gc-title">Broadway Show</div><div class="gc-sub">Ragtime · Maybe Happy Ending · Operation Mincemeat</div></div></div></td>
+          <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('fri26-day-closing')"><div class="gc-time">2:00 PM</div><div class="gc-title">Closing Ceremonies</div><div class="gc-sub">AirBnB Command Center</div></div></div></td>
           <td><div class="grid-cell"><div class="gc-item gc-match" onclick="openDrawer('sat27-day')"><div class="gc-time">Depart 2PM · KO 5PM</div><div class="gc-title">Panama vs England</div><div class="gc-sub">MetLife Stadium</div></div></div></td>
         </tr>
         <tr>
@@ -713,7 +717,10 @@ body {
             <div class="gc-item gc-event" onclick="openDrawer('wed24-eve')"><div class="gc-title">Quintessential NY Nite 🎩</div><div class="gc-sub">Central Park → Dinner → Don't Tell Mama → Top of the Rock</div></div>
           </div></td>
           <td><div class="grid-cell-empty">Open</div></td>
-          <td><div class="grid-cell"><div class="gc-item gc-event" onclick="openDrawer('fri26-eve')"><div class="gc-time">6:00 PM</div><div class="gc-title">Closing Ceremonies</div><div class="gc-sub">AirBnB Command Center</div></div></div></td>
+          <td><div class="grid-cell">
+            <div class="gc-item gc-neutral" onclick="openDrawer('fri26-eve-broadway')"><div class="gc-time">7:00 PM</div><div class="gc-title">Broadway Show</div><div class="gc-sub">Ragtime · Vivian Beaumont Theater</div></div>
+            <div class="gc-item gc-neutral" onclick="openDrawer('fri26-eve-mets')"><div class="gc-time">7:10 PM</div><div class="gc-title">Mets vs Phillies</div><div class="gc-sub">Citi Field</div></div>
+          </div></td>
           <td><div class="grid-cell"><div class="gc-item gc-neutral" onclick="openDrawer('sat27-eve')"><div class="gc-title">Departures</div><div class="gc-sub">PM travel</div></div></div></td>
         </tr>
       </tbody>
@@ -753,6 +760,13 @@ body {
             <div class="time-content-loc" style="margin-top:6px;">🏠 Sky Castle · 460 W 42nd St #58B</div>
             <div class="time-content-loc">🏨 Ramada by Wyndham · 343 W 44th St</div>
             <div class="time-content-loc">🏢 Command Center · 42 E 38th St</div>
+          </div>
+        </div>
+        <div class="time-block time-block-kids">
+          <div class="time-label">4:00 PM</div>
+          <div class="time-content">
+            <div class="time-content-title">Squad Stash Surprise - Marking Moments</div>
+            <div class="time-content-desc">A short surprise moment for the Squad. Theme revealed live.</div>
           </div>
         </div>
         <div class="time-block">
@@ -831,6 +845,13 @@ body {
             <div class="time-content-desc">Explore West African culture ahead of the match.</div>
           </div>
         </div>
+        <div class="time-block time-block-kids">
+          <div class="time-label">3:00 PM</div>
+          <div class="time-content">
+            <div class="time-content-title">Squad Stash Surprise - Marking Moments</div>
+            <div class="time-content-desc">A short surprise moment for the Squad. Theme revealed live.</div>
+          </div>
+        </div>
         <div class="time-block time-block-match">
           <div class="time-label">5:00 PM</div>
           <div class="time-content">
@@ -899,6 +920,13 @@ body {
         <div class="chevron">›</div>
       </div>
       <div class="day-body">
+        <div class="time-block time-block-kids">
+          <div class="time-label">11:00 AM</div>
+          <div class="time-content">
+            <div class="time-content-title">Squad Stash Surprise - Marking Moments</div>
+            <div class="time-content-desc">A short surprise moment for the Squad. Theme revealed live.</div>
+          </div>
+        </div>
         <div class="time-block time-block-match">
           <div class="time-label">Day</div>
           <div class="time-content">
@@ -960,7 +988,7 @@ body {
         <div class="day-left">
           <div class="day-date-box"><div class="day-date-num">26</div><div class="day-date-dow">Fri</div></div>
           <div class="day-info">
-            <div class="day-title">Ksana's Birthday · Broadway · Closing Ceremonies</div>
+            <div class="day-title">Ksana's Birthday · Closing Ceremonies · Broadway</div>
             <div class="day-badges"><span class="badge badge-kids">🎂 Kids</span><span class="badge badge-event">✦ Broadway</span><span class="badge badge-general">Final Night</span></div>
           </div>
         </div>
@@ -977,16 +1005,23 @@ body {
         <div class="time-block time-block-event">
           <div class="time-label">2:00 PM</div>
           <div class="time-content">
-            <div class="time-content-title">Broadway Show</div>
-            <div class="time-content-desc">Choosing between Ragtime, Maybe Happy Ending, and Operation Mincemeat.</div>
-          </div>
-        </div>
-        <div class="time-block">
-          <div class="time-label">6:00 PM</div>
-          <div class="time-content">
             <div class="time-content-title">Closing Ceremonies</div>
             <div class="time-content-loc">📍 AirBnB Command Center</div>
             <div class="time-content-desc">Final night together. Last stories, last laughs.</div>
+          </div>
+        </div>
+        <div class="time-block">
+          <div class="time-label">7:00 PM</div>
+          <div class="time-content">
+            <div class="time-content-title">Broadway Show</div>
+            <div class="time-content-desc">Ragtime at the Vivian Beaumont Theater.</div>
+          </div>
+        </div>
+        <div class="time-block">
+          <div class="time-label">7:10 PM</div>
+          <div class="time-content">
+            <div class="time-content-title">Mets vs Phillies</div>
+            <div class="time-content-desc">Citi Field. An alternative for those not headed to Broadway.</div>
           </div>
         </div>
       </div>
@@ -1973,6 +2008,16 @@ const drawerData = {
       { icon: '🗺', label: 'Plan', value: 'Explore Hell\'s Kitchen and the surrounding area. Get your bearings before the full family arrives.' },
     ]
   },
+  'sat20-day-stash': {
+    date: 'Saturday, June 20 · 4:00 PM',
+    title: 'Squad Stash Surprise - Marking Moments',
+    badge: { text: 'Kids', cls: 'drawer-badge-kids' },
+    rows: [
+      { icon: '🎁', label: 'Theme', value: 'Surprise Gifts to the Squad for their participation in the week and following the leaders and advisers in the family.' },
+      { icon: '✨', label: 'The Reveal', value: 'Theme revealed live!' },
+      { icon: '⏱️', label: 'Duration', value: '5–10 minutes' },
+    ]
+  },
   'sat20-eve': {
     date: 'Saturday, June 20 · Evening',
     title: 'Welcome Dinner · NYC Pizza Night',
@@ -2033,6 +2078,16 @@ const drawerData = {
       { icon: '⚽', label: 'Tonight', value: 'Senegal is ranked #14 in the world. Stars: Sadio Mané, Nicolas Jackson.' },
     ]
   },
+  'mon22-day-stash': {
+    date: 'Monday, June 22 · 3:00 PM',
+    title: 'Squad Stash Surprise - Marking Moments',
+    badge: { text: 'Kids', cls: 'drawer-badge-kids' },
+    rows: [
+      { icon: '🎁', label: 'Theme', value: 'Surprise Gifts to the Squad for their participation in the week and following the leaders and advisers in the family.' },
+      { icon: '✨', label: 'The Reveal', value: 'Theme revealed live!' },
+      { icon: '⏱️', label: 'Duration', value: '5–10 minutes' },
+    ]
+  },
   'mon22-eve-match': {
     date: 'Monday, June 22 · Evening',
     title: 'Norway vs Senegal',
@@ -2090,6 +2145,16 @@ const drawerData = {
       { icon: '🥗', label: 'Friedman\'s', value: 'Edison Hotel, W 47th St · 1 min walk. American comfort food, great burgers and mac & cheese, outdoor seating.' },
     ]
   },
+  'wed24-morning-stash': {
+    date: 'Wednesday, June 24 · 11:00 AM',
+    title: 'Squad Stash Surprise - Marking Moments',
+    badge: { text: 'Kids', cls: 'drawer-badge-kids' },
+    rows: [
+      { icon: '🎁', label: 'Theme', value: 'Surprise Gifts to the Squad for their participation in the week and following the leaders and advisers in the family.' },
+      { icon: '✨', label: 'The Reveal', value: 'Theme revealed live!' },
+      { icon: '⏱️', label: 'Duration', value: '5–10 minutes' },
+    ]
+  },
   'wed24-day': {
     date: 'Wednesday, June 24',
     title: 'German House of Soccer',
@@ -2134,8 +2199,8 @@ const drawerData = {
       { icon: '🇩🇪', label: 'Germany', value: 'Rank #10 · Stars: Jamal Musiala, Florian Wirtz' },
     ]
   },
-  'fri26-eve': {
-    date: 'Friday, June 26 · 6:00 PM',
+  'fri26-day-closing': {
+    date: 'Friday, June 26 · 2:00 PM',
     title: 'Closing Ceremonies',
     badge: { text: 'Event', cls: 'drawer-badge-event' },
     rows: [
@@ -2174,15 +2239,22 @@ const drawerData = {
       { icon: '⭐', label: 'Who', value: 'Kids event' },
     ]
   },
-  'fri26-day-broadway': {
-    date: 'Friday, June 26 · 2:00 PM',
+  'fri26-eve-broadway': {
+    date: 'Friday, June 26 · 7:00 PM',
     title: 'Broadway Show',
-    badge: { text: 'Event', cls: 'drawer-badge-event' },
+    badge: { text: 'General', cls: 'drawer-badge-general' },
     rows: [
-      { icon: '🎭', label: 'The Candidates', value: 'Three incredible options — one to pick.' },
-      { icon: '✦', label: 'Ragtime', value: '<strong>Vivian Beaumont Theater · 150 W 65th St (Lincoln Center)</strong><br>Starring Joshua Henry — the reason this show is on the list. A sweeping musical about three families chasing the American Dream at the turn of the century. Extended through Aug 2, 2026.' },
-      { icon: '🤖', label: 'Maybe Happy Ending', value: '<strong>Belasco Theatre · 111 W 44th St</strong><br>6 Tony Award winner including Best Musical. A charming, heartfelt story about two retired robots who find connection. One of the most visually stunning shows in recent Broadway memory.' },
-      { icon: '🕵️', label: 'Operation Mincemeat', value: '<strong>John Golden Theatre · 252 W 45th St</strong><br>Olivier Award winner and the #1 Broadway show of 2025. The hilarious true story of the WWII covert operation that turned the tide of the war. Fast-paced, funny, and unlike anything else on Broadway.' },
+      { icon: '✦', label: 'Ragtime', value: '<strong>Vivian Beaumont Theater · 150 W 65th St (Lincoln Center)</strong><br>Starring Joshua Henry. A sweeping musical about three families chasing the American Dream at the turn of the century. Extended through Aug 2, 2026.' },
+    ]
+  },
+  'fri26-eve-mets': {
+    date: 'Friday, June 26 · 7:10 PM',
+    title: 'Mets vs Phillies',
+    badge: { text: 'General', cls: 'drawer-badge-general' },
+    rows: [
+      { icon: '📍', label: 'Venue', value: 'Citi Field · Flushing, NY' },
+      { icon: '⚾', label: 'Matchup', value: 'New York Mets vs Philadelphia Phillies' },
+      { icon: '🎟️', label: 'Note', value: 'An alternative for those not headed to Broadway that evening.' },
     ]
   },
   'wed24-afterparty': {
